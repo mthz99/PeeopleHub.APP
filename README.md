@@ -226,19 +226,9 @@ Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) par
 
 ## 👥 Time
 
-Desenvolvido com ❤️ por:
+Desenvolvido com carinho por:
 
-- **[Seu Nome](https://github.com/seu-usuario)** - Desenvolvedor Frontend
-
-## 🆘 Suporte
-
-Encontrou um bug? Tem uma sugestão?
-
-- 🐛 [Reportar Bug](https://github.com/seu-usuario/PeopleHubAPP/issues)
-- 💡 [Sugerir Feature](https://github.com/seu-usuario/PeopleHubAPP/issues)
-- 📧 Email: seu-email@dominio.com
-
----
+- **[mTT](https://github.com/mthz99)** - 
 
 <div align="center">
   <strong>🌟 Se este projeto te ajudou, deixe uma estrela! 🌟</strong>
