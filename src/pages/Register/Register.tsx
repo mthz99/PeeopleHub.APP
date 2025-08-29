@@ -10,6 +10,7 @@ import './Register.css';
 export const Register: React.FC = () => {
   const navigate = useNavigate();
   const { showSuccess, showError } = useToast();
+  const [apiError, setApiError] = useState<string | null>(null);
   
   const [formData, setFormData] = useState<RegisterForm>({
     nome: '',
@@ -70,12 +71,12 @@ export const Register: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+    setApiError(null);
     if (!validateForm()) return;
 
     try {
       setLoading(true);
-      
+
       const dataToSend = {
         ...formData,
         cpf: formData.cpf.replace(/\D/g, ''),
@@ -89,6 +90,7 @@ export const Register: React.FC = () => {
       navigate('/login');
     } catch (error: any) {
       const message = error.response?.data?.message || 'Erro ao criar conta';
+      setApiError(message);
       showError(message);
     } finally {
       setLoading(false);
@@ -117,7 +119,11 @@ export const Register: React.FC = () => {
           <h1 className="register-title">PeopleHub</h1>
           <p className="register-subtitle">Criar nova conta</p>
         </div>
-        
+        {apiError && (
+          <div className="error-message" style={{ color: '#d32f2f', marginBottom: '16px', textAlign: 'center' }}>
+            {apiError}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="register-form">
           <Input
             label="Nome completo"

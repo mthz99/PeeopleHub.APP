@@ -10,7 +10,7 @@ import { useToast } from './hooks';
 import './styles/global.css';
 
 const AppContent: React.FC = () => {
-  const { toast, hideToast } = useToast();
+  const { toast, duration, hideToast } = useToast();
 
   return (
     <>
@@ -34,6 +34,7 @@ const AppContent: React.FC = () => {
         type={toast.type}
         isVisible={toast.isVisible}
         onClose={hideToast}
+        duration={duration}
       />
     </>
   );
