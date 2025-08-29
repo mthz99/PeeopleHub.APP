@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="peopleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#bgGrad)"/>
+  
+  <!-- People Network Icons -->
+  <!-- Center person -->
+  <circle cx="256" cy="256" r="50" fill="url(#peopleGrad)" opacity="0.9"/>
+  <circle cx="256" cy="230" r="18" fill="url(#bgGrad)"/>
+  <path d="M 220 290 Q 256 270 292 290 L 292 310 Q 256 300 220 310 Z" fill="url(#bgGrad)"/>
+  
+  <!-- Connected people -->
+  <!-- Top left -->
+  <circle cx="160" cy="160" r="35" fill="url(#peopleGrad)" opacity="0.8"/>
+  <circle cx="160" cy="142" r="13" fill="url(#bgGrad)"/>
+  <path d="M 135 185 Q 160 170 185 185 L 185 200 Q 160 192 135 200 Z" fill="url(#bgGrad)"/>
+  
+  <!-- Top right -->
+  <circle cx="352" cy="160" r="35" fill="url(#peopleGrad)" opacity="0.8"/>
+  <circle cx="352" cy="142" r="13" fill="url(#bgGrad)"/>
+  <path d="M 327 185 Q 352 170 377 185 L 377 200 Q 352 192 327 200 Z" fill="url(#bgGrad)"/>
+  
+  <!-- Bottom left -->
+  <circle cx="160" cy="352" r="35" fill="url(#peopleGrad)" opacity="0.8"/>
+  <circle cx="160" cy="334" r="13" fill="url(#bgGrad)"/>
+  <path d="M 135 377 Q 160 362 185 377 L 185 392 Q 160 384 135 392 Z" fill="url(#bgGrad)"/>
+  
+  <!-- Bottom right -->
+  <circle cx="352" cy="352" r="35" fill="url(#peopleGrad)" opacity="0.8"/>
+  <circle cx="352" cy="334" r="13" fill="url(#bgGrad)"/>
+  <path d="M 327 377 Q 352 362 377 377 L 377 392 Q 352 384 327 392 Z" fill="url(#bgGrad)"/>
+  
+  <!-- Connection lines -->
+  <line x1="195" y1="195" x2="221" y2="221" stroke="white" stroke-width="6" opacity="0.6"/>
+  <line x1="317" y1="195" x2="291" y2="221" stroke="white" stroke-width="6" opacity="0.6"/>
+  <line x1="195" y1="317" x2="221" y2="291" stroke="white" stroke-width="6" opacity="0.6"/>
+  <line x1="317" y1="317" x2="291" y2="291" stroke="white" stroke-width="6" opacity="0.6"/>
+</svg>

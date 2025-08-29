@@ -1,0 +1,1 @@
+export { PersonFormComponent } from './PersonFormComponent';
